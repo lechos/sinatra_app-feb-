@@ -5,7 +5,8 @@ class AddMessages < ActiveRecord::Migration
       t.string :title
       t.string :author
       t.string :content
-      t.timestamps null: false
+      t.timestamps :created_at, null: false
+      t.timestamps :updated_at, null: false
     end
   end
 end
